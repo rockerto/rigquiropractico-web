@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  experimental: {
+    // Le decimos explícitamente a Next.js que no queremos nada de Turbo
+    turbo: undefined,
+  },
+};
 
-export default nextConfig;
+module.exports = nextConfig;
