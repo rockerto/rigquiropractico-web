@@ -100,7 +100,7 @@ export default function Home() {
             <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
               Un espacio diseñado para tu comodidad y bienestar, equipado con la mejor tecnología para tu recuperación.
             </p>
-            <ImageSlider />
+             // <ImageSlider />
           </div>
         </AnimatedSection>
       </section>
