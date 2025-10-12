@@ -6,4 +6,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig; // <-- ¡ESTE ES EL CAMBIO! Usamos "export default"
