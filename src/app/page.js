@@ -135,69 +135,68 @@ export default function Home() {
             <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
               La confianza y el bienestar de mis pacientes es mi mayor recompensa. Aquí algunas de sus historias.
             </p>
+{/* ... dentro de la sección de testimonios ... */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-lg relative border">
                 <FaQuoteLeft className="absolute top-6 left-6 text-5xl text-gray-100" />
                 <p className="text-gray-700 italic text-lg leading-relaxed mb-6 relative z-10">
-                  "Llevaba mucho tiempo con dolor lumbar, el cual se irradiaba hacia mi pierna. Gracias a Roberto, hoy me encuentro sin dolor, además de que me ayudó a mejorar mi postura."
+                  &quot;Llevaba mucho tiempo con dolor lumbar, el cual se irradiaba hacia mi pierna. Gracias a Roberto, hoy me encuentro sin dolor, además de que me ayudó a mejorar mi postura.&quot;
                 </p>
                 <p className="font-bold text-gray-800 text-right">- Daniel L.</p>
               </div>
               <div className="bg-white p-8 rounded-lg shadow-lg relative border">
                 <FaQuoteLeft className="absolute top-6 left-6 text-5xl text-gray-100" />
                 <p className="text-gray-700 italic text-lg leading-relaxed mb-6 relative z-10">
-                  "Llegué a la consulta por una rectificación cervical que me producía mucho dolor. En la primera sesión me sentí mucho mejor. Un excelente profesional, lo recomiendo 100%."
+                  &quot;Llegué a la consulta por una rectificación cervical que me producía mucho dolor. En la primera sesión me sentí mucho mejor. Un excelente profesional, lo recomiendo 100%.&quot;
                 </p>
                 <p className="font-bold text-gray-800 text-right">- María José P.</p>
+              </div>
+            </div>          </div>
+        </AnimatedSection>
+      </section>
+
+      {/* === SECCIÓN 6: MULTIMEDIA === */}
+      <section id="multimedia" className="py-20 bg-white">
+        <AnimatedSection>
+          <div className="container mx-auto px-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Recursos y Contenido de Valor
+            </h2>
+            <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+              Explora nuestros videos educativos y escucha nuestro podcast para aprender más sobre el cuidado de tu columna y tu salud.
+            </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4 text-left">Canal de YouTube</h3>
+                <div className="aspect-video w-full rounded-lg overflow-hidden shadow-xl">
+                  <iframe 
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/videoseries?list=PLk7PQDq4eiRolBJa_yJPbk5eAuViOWxl6"
+                    title="Playlist de YouTube de Rig Quiropráctico" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowFullScreen>
+                  </iframe>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4 text-left">Nuestro Podcast</h3>
+                 <iframe
+                    style={{ borderRadius: '12px' }}
+                    src="https://open.spotify.com/embed/show/1FcYinJl7VRxOS45N85XOS?utm_source=generator"
+                    width="100%" 
+                    height="352" 
+                    frameBorder="0" 
+                    allowFullScreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                  </iframe>
               </div>
             </div>
           </div>
         </AnimatedSection>
       </section>
-
-{/* === SECCIÓN 6: MULTIMEDIA (DESACTIVADA TEMPORALMENTE PARA PRUEBA) === */}
-{/*
-  <section id="multimedia" className="py-20 bg-white">
-    <AnimatedSection>
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-          Recursos y Contenido de Valor
-        </h2>
-        <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
-          Explora nuestros videos educativos y escucha nuestro podcast para aprender más sobre el cuidado de tu columna y tu salud.
-        </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 text-left">Canal de YouTube</h3>
-            <div className="aspect-video w-full rounded-lg overflow-hidden shadow-xl">
-              <iframe 
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/videoseries?list=PLk7PQDq4eiRolBJa_yJPbk5eAuViOWxl6"
-                title="Playlist de YouTube de Rig Quiropráctico" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowFullScreen>
-              </iframe>
-            </div>
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 text-left">Nuestro Podcast</h3>
-             <iframe
-                style={{ borderRadius: '12px' }}
-                src="https://open.spotify.com/embed/show/1FcYinJl7VRxOS45N85XOS?utm_source=generator"
-                width="100%" 
-                height="352" 
-                frameBorder="0" 
-                allowFullScreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy">
-              </iframe>
-          </div>
-        </div>
-      </div>
-    </AnimatedSection>
-  </section>
-*/}      
+      
       {/* === SECCIÓN 7: CONTACTO Y FORMULARIO (CONTENIDO ACTUALIZADO) === */}
       <section id="contacto" className="py-20 bg-gray-50">
         <AnimatedSection>
