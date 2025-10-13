@@ -1,7 +1,6 @@
 "use client"; 
 
 import Image from 'next/image';
-// Imports actualizados: quitamos FaBed y añadimos GiTripleNeedle
 import { FaUserMd, FaRunning, FaQuoteLeft, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { GiTripleNeedle } from 'react-icons/gi'; 
 import { useState } from 'react';
@@ -13,7 +12,6 @@ export default function Home() {
   const [status, setStatus] = useState('');
 
   const handleSubmit = async (formData) => {
-    // ... (la función handleSubmit no cambia)
     setStatus('enviando');
     const result = await sendEmail(formData);
     if (result.success) {
@@ -26,13 +24,24 @@ export default function Home() {
 
   return (
     <main>
-      {/* === SECCIÓN 1: HERO === */}
+      {/* === SECCIÓN 1: HERO (CON LOGO Y BOTÓN CORREGIDOS) === */}
       <section 
         className="relative bg-cover bg-[50%_30%] bg-no-repeat text-white md:bg-fixed"
         style={{ backgroundImage: "url('/hero-background.jpg')" }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative container mx-auto flex flex-col items-center px-6 py-32 text-center z-10">
+        <div className="relative container mx-auto flex flex-col items-center px-6 py-24 md:py-32 text-center z-10">
+          
+          <div className="mb-8">
+            <Image
+                src="/logo.png"
+                alt="Logo de Rig Quiropráctico"
+                width={200}
+                height={100}
+                priority
+            />
+          </div>
+
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
             Recupera tu Bienestar y Vive sin Dolor
           </h1>
@@ -40,7 +49,9 @@ export default function Home() {
             Atención quiropráctica profesional enfocada en aliviar tus dolencias, mejorar tu postura y potenciar tu calidad de vida.
           </p>
           <a
-            href="#contacto"
+            href="https://rigquiropractico-spa.appointlet.com/" // <-- ¡ENLACE ACTUALIZADO!
+            target="_blank" // Para que se abra en una nueva pestaña
+            rel="noopener noreferrer"
             className="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out text-lg"
           >
             Agenda tu Evaluación
@@ -48,7 +59,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* === SECCIÓN 2: QUIÉN SOY (CONTENIDO ACTUALIZADO) === */}
+      {/* === SECCIÓN 2: QUIÉN SOY === */}
       <section id="quien-soy" className="py-20 bg-white">
         <AnimatedSection>
           <div className="container mx-auto px-6">
@@ -79,7 +90,7 @@ export default function Home() {
         </AnimatedSection>
       </section>
 
-      {/* === SECCIÓN 3: GALERÍA (SLIDER) === */}
+      {/* === SECCIÓN 3: GALERÍA (SLIDER REACTIVADO) === */}
       <section id="galeria" className="py-20 bg-gray-50">
         <AnimatedSection>
           <div className="container mx-auto px-6 text-center">
@@ -89,10 +100,10 @@ export default function Home() {
             <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
               Un espacio diseñado para tu comodidad y bienestar, equipado con la mejor tecnología para tu recuperación.
             </p>
-            <ImageSlider />
+            <ImageSlider /> {/* <-- ¡REACTIVADO! */}
           </div>
         </AnimatedSection>
-      </section>
+     </section>
 
       {/* === SECCIÓN 4: SERVICIOS (CONTENIDO ACTUALIZADO) === */}
       <section id="servicios" className="py-20 bg-white">
@@ -135,23 +146,23 @@ export default function Home() {
             <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
               La confianza y el bienestar de mis pacientes es mi mayor recompensa. Aquí algunas de sus historias.
             </p>
-{/* ... dentro de la sección de testimonios ... */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-lg relative border">
                 <FaQuoteLeft className="absolute top-6 left-6 text-5xl text-gray-100" />
                 <p className="text-gray-700 italic text-lg leading-relaxed mb-6 relative z-10">
-                  &quot;Llevaba mucho tiempo con dolor lumbar, el cual se irradiaba hacia mi pierna. Gracias a Roberto, hoy me encuentro sin dolor, además de que me ayudó a mejorar mi postura.&quot;
+                  "Llevaba mucho tiempo con dolor lumbar, el cual se irradiaba hacia mi pierna. Gracias a Roberto, hoy me encuentro sin dolor, además de que me ayudó a mejorar mi postura."
                 </p>
                 <p className="font-bold text-gray-800 text-right">- Daniel L.</p>
               </div>
               <div className="bg-white p-8 rounded-lg shadow-lg relative border">
                 <FaQuoteLeft className="absolute top-6 left-6 text-5xl text-gray-100" />
                 <p className="text-gray-700 italic text-lg leading-relaxed mb-6 relative z-10">
-                  &quot;Llegué a la consulta por una rectificación cervical que me producía mucho dolor. En la primera sesión me sentí mucho mejor. Un excelente profesional, lo recomiendo 100%.&quot;
+                  "Llegué a la consulta por una rectificación cervical que me producía mucho dolor. En la primera sesión me sentí mucho mejor. Un excelente profesional, lo recomiendo 100%."
                 </p>
                 <p className="font-bold text-gray-800 text-right">- María José P.</p>
               </div>
-            </div>          </div>
+            </div>
+          </div>
         </AnimatedSection>
       </section>
 
