@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <main>
-      {/* === SECCIÓN 1: HERO (CON LOGO Y BOTÓN CORREGIDOS) === */}
+      {/* === SECCIÓN 1: HERO === */}
       <section 
         className="relative bg-cover bg-[50%_30%] bg-no-repeat text-white md:bg-fixed"
         style={{ backgroundImage: "url('/hero-background.jpg')" }}
@@ -49,8 +49,8 @@ export default function Home() {
             Atención quiropráctica profesional enfocada en aliviar tus dolencias, mejorar tu postura y potenciar tu calidad de vida.
           </p>
           <a
-            href="https://rigquiropractico-spa.appointlet.com/" // <-- ¡ENLACE ACTUALIZADO!
-            target="_blank" // Para que se abra en una nueva pestaña
+            href="https://rigquiropractico-spa.appointlet.com/"
+            target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out text-lg"
           >
@@ -103,13 +103,13 @@ export default function Home() {
             <ImageSlider /> {/* <-- ¡REACTIVADO! */}
           </div>
         </AnimatedSection>
-     </section>
+      </section>
 
-      {/* === SECCIÓN 4: SERVICIOS (CONTENIDO ACTUALIZADO) === */}
+      {/* === SECCIÓN 4: SERVICIOS === */}
       <section id="servicios" className="py-20 bg-white">
-         <AnimatedSection>
+        <AnimatedSection>
           <div className="container mx-auto px-6 text-center">
-             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Nuestros Servicios
             </h2>
             <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -136,7 +136,7 @@ export default function Home() {
         </AnimatedSection>
       </section>
       
-      {/* === SECCIÓN 5: TESTIMONIOS === */}
+      {/* === SECCIÓN 5: TESTIMONIOS (COMILLAS CORREGIDAS) === */}
       <section id="testimonios" className="py-20 bg-gray-50">
         <AnimatedSection>
           <div className="container mx-auto px-6 text-center">
@@ -150,14 +150,14 @@ export default function Home() {
               <div className="bg-white p-8 rounded-lg shadow-lg relative border">
                 <FaQuoteLeft className="absolute top-6 left-6 text-5xl text-gray-100" />
                 <p className="text-gray-700 italic text-lg leading-relaxed mb-6 relative z-10">
-                  "Llevaba mucho tiempo con dolor lumbar, el cual se irradiaba hacia mi pierna. Gracias a Roberto, hoy me encuentro sin dolor, además de que me ayudó a mejorar mi postura."
+                  &quot;Llevaba mucho tiempo con dolor lumbar, el cual se irradiaba hacia mi pierna. Gracias a Roberto, hoy me encuentro sin dolor, además de que me ayudó a mejorar mi postura.&quot;
                 </p>
                 <p className="font-bold text-gray-800 text-right">- Daniel L.</p>
               </div>
               <div className="bg-white p-8 rounded-lg shadow-lg relative border">
                 <FaQuoteLeft className="absolute top-6 left-6 text-5xl text-gray-100" />
                 <p className="text-gray-700 italic text-lg leading-relaxed mb-6 relative z-10">
-                  "Llegué a la consulta por una rectificación cervical que me producía mucho dolor. En la primera sesión me sentí mucho mejor. Un excelente profesional, lo recomiendo 100%."
+                  &quot;Llegué a la consulta por una rectificación cervical que me producía mucho dolor. En la primera sesión me sentí mucho mejor. Un excelente profesional, lo recomiendo 100%.&quot;
                 </p>
                 <p className="font-bold text-gray-800 text-right">- María José P.</p>
               </div>
@@ -208,7 +208,7 @@ export default function Home() {
         </AnimatedSection>
       </section>
       
-      {/* === SECCIÓN 7: CONTACTO Y FORMULARIO (CONTENIDO ACTUALIZADO) === */}
+      {/* === SECCIÓN 7: CONTACTO Y FORMULARIO === */}
       <section id="contacto" className="py-20 bg-gray-50">
         <AnimatedSection>
           <div className="container mx-auto px-6 text-center">
