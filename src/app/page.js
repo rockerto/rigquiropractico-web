@@ -82,7 +82,7 @@ export default function Home() {
                   ¡Hola! Soy <strong>Roberto Ibacache G. (RIG)</strong>, Quiropráctico y Kinesiólogo con más de una década y media dedicado a la salud de mis pacientes. Mi formación incluye Kinesiología en la Universidad de Antofagasta y Quiropráctica en la Universidad Central, complementada con especialización en Fisioterapia Invasiva de la Universidad de Chile.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Como atleta activo de Strongman, entiendo en carne propia las demandas del cuerpo, el dolor y la importancia de una recuperación óptima. Esta experiencia personal, sumada a mi formación profesional, me permite ofrecer un enfoque integral y empático, enfocado en encontrar y tratar la raíz de tus dolencias para que puedas volver a moverte sin limitaciones.
+                  Como atleta activo de Strongman, entiendo en carne propia las demandas del cuerpo, el dolor y la importancia de una recuperación óptima. Esta experiencia personal, sumada a mi formación profesional, me permite ofrecer un enfoque integral y empático, dirigido a encontrar y tratar la raíz de tus dolencias para que puedas volver a moverte sin limitaciones.
                 </p>
               </div>
             </div>
@@ -224,7 +224,7 @@ export default function Home() {
                 <ul className="space-y-4 text-lg text-gray-700">
                   <li className="flex items-center gap-4">
                     <FaMapMarkerAlt className="text-blue-600 text-2xl" />
-                    <span>Salitrera Lautaro 541-B, Copiapó, Atacama</span>
+                    <span>Copiapó, Atacama</span>
                   </li>
                   <li className="flex items-center gap-4">
                     <FaPhone className="text-blue-600 text-2xl" />
